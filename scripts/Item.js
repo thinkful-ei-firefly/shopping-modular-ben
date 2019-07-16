@@ -1,6 +1,9 @@
-/* eslint-disable */
+/* eslint-disable no-extra-boolean-cast */
+'use strict';
+/* global cuid */
+
 function validateName(name) {
-  if (name == undefined) {
+  if (!name) {
     throw new TypeError('Name does not exist.');
   }
 }
@@ -11,7 +14,7 @@ function create(name) {
 
 const Item = (function() {
   return {
-    validateName: validateName(),
-    create: create()
+    validateName: validateName,
+    create: create
   };
 })();
