@@ -11,4 +11,3 @@ Created for the Thinkful EI Program.
 4. If you entered the command correctly, then typing `git remote -v` should show the new repo url connected to `origin`
 5. Push to the new repo: `git push -u origin master`
 6. Begin the day's assignment as provided in the curriculum
-
