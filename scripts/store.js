@@ -15,13 +15,13 @@ const store = (function() {
     items,
     hideCheckedItems,
     searchTerm,
-    findById: findById,
-    addItem: addItem,
-    findAndToggleChecked: findAndToggleChecked,
-    findAndUpdateName: findAndUpdateName,
-    findAndDelete: findAndDelete,
-    toggleCheckedFilter: toggleCheckedFilter,
-    setSearchTerm: setSearchTerm
+    findById,
+    addItem,
+    findAndToggleChecked,
+    findAndUpdateName,
+    findAndDelete,
+    toggleCheckedFilter,
+    setSearchTerm
   };
 })();
 
