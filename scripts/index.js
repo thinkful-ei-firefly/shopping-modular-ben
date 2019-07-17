@@ -1,7 +1,7 @@
-'use strict';
+/* eslint-disable no-undef */
 /* global shoppingList */
 
-// eslint-disable-next-line no-unused-vars
+'use strict';
 
 function main() {
   shoppingList.bindEventListeners();
