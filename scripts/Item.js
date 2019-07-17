@@ -1,6 +1,7 @@
-/* eslint-disable no-extra-boolean-cast */
-'use strict';
+/* eslint-disable no-unused-vars */
 /* global cuid */
+
+'use strict';
 
 function validateName(name) {
   if (!name) {
@@ -14,7 +15,7 @@ function create(name) {
 
 const Item = (function() {
   return {
-    validateName: validateName,
-    create: create
+    validateName,
+    create
   };
 })();

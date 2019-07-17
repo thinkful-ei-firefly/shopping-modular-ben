@@ -1,29 +1,6 @@
-'use strict';
 /* global cuid Item */
 
-const store = (function() {
-  const items = [
-    { id: cuid(), name: 'apples', checked: false },
-    { id: cuid(), name: 'oranges', checked: false },
-    { id: cuid(), name: 'milk', checked: true },
-    { id: cuid(), name: 'bread', checked: false }
-  ];
-  const hideCheckedItems = false;
-  const searchTerm = '';
-
-  return {
-    items,
-    hideCheckedItems,
-    searchTerm,
-    findById,
-    addItem,
-    findAndToggleChecked,
-    findAndUpdateName,
-    findAndDelete,
-    toggleCheckedFilter,
-    setSearchTerm
-  };
-})();
+'use strict';
 
 function findById(id) {
   return this.items.find(item => item.id === id);
@@ -64,3 +41,27 @@ function toggleCheckedFilter() {
 function setSearchTerm(searchTerm) {
   this.searchTerm = searchTerm;
 }
+
+const store = (function() {
+  const items = [
+    { id: cuid(), name: 'apples', checked: false },
+    { id: cuid(), name: 'oranges', checked: false },
+    { id: cuid(), name: 'milk', checked: true },
+    { id: cuid(), name: 'bread', checked: false }
+  ];
+  const hideCheckedItems = false;
+  const searchTerm = '';
+
+  return {
+    items,
+    hideCheckedItems,
+    searchTerm,
+    findById,
+    addItem,
+    findAndToggleChecked,
+    findAndUpdateName,
+    findAndDelete,
+    toggleCheckedFilter,
+    setSearchTerm
+  };
+})();
