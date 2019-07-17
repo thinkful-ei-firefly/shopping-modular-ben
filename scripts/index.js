@@ -1,5 +1,4 @@
-/* eslint-disable no-undef */
-/* global shoppingList */
+/* global $ shoppingList */
 
 'use strict';
 
